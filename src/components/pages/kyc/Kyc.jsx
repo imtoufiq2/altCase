@@ -289,7 +289,7 @@ const Kyc = () => {
   const callFirstApi = useCallback(async (data) => {
     try {
       const response = await axios.get(
-        `http://altcaseinvestor.we3.in/api/v2/onboarding/digilocker-sso/callback?${data}`,
+        `https://altcaseinvestor.we3.in/api/v2/onboarding/digilocker-sso/callback?${data}`,
       );
       console.log("First API call", response.data);
       return response.data; // Return the data to be used later
